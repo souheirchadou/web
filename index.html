@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Website</title>
+<title>my Website</title>
 
 <style>
-body {
-    font-family: Cambria;
+
+body{
+    font-family: "Times New Roman";
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 40px;
+}
+
+h1{
     text-align: center;
+    font-size: 40px;
 }
 
-h1 {
-    color: black;
-}
-
-h2 {
+h2{
+    text-align: center;
     color: red;
-    border-bottom: 2px solid red;
-    display: inline-block;
+    text-decoration: underline;
 }
 
-p {
-    color: green;
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.info{
     font-size: 22px;
+    line-height: 40px;
 }
 
-span {
-    color: blue;
+.label{
+    color: green;
+    font-weight: bold;
 }
+
+.image img{
+    width: 350px;
+    height: auto;
+    border: 3px solid black;
+}
+
 </style>
-
 </head>
 
 <body>
 
-<h1>Welcome to my website</h1>
+<h1>Welcome to my Web Site</h1>
+<h2>Web Development (Lab1)</h2>
 
-<h2>Dev Web</h2>
+<div class="container">
 
-<p>Full Name: <span>Souheir Chadou</span></p>
-<p>Age: <span>20</span></p>
-<p>Class: <span>Computer Science</span></p>
-<p>University: <span>hamma lakhdar</span></p>
+    <div class="info">
+        <p><span class="label">Full name:</span>Souheir Chadou</p>
+        <p><span class="label">Age:</span> 20 years old</p>
+        <p><span class="label">Class:</span> 2nd LMD Computer Science</p>
+        <p><span class="label">University:</span> hamma lkhader</p>
+    </div>
+
+    <div class="image">
+        <img src="https://picsum.photos/350/250" alt="Picture">
+    </div>
+
+</div>
 
 </body>
 </html>
